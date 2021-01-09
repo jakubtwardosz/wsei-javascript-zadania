@@ -55,4 +55,51 @@ for (let i = 0; i < 10; i++) {
     } 
 }
 
-// Zadanie 7 
+// Zadanie 7
+
+for (let i = 0; i < 101; i++) {
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else{
+        console.log(i);
+    }
+}
+
+// Zadanie 8
+
+const star = '*';
+const space = ' ';
+
+// a)
+
+for (let i = 0; i < 5; i++) {
+
+    let result = "";
+    
+    for (let j = 0; j < i; j++) {
+        result += star;
+    }
+    console.log(result);
+}
+
+
+// b)
+
+var output = '';
+const num = 4;
+
+for(var i=1; i<=num; i++){
+  
+  for(var k=1; k<=num-i; k++){
+    output += space;
+  }
+  
+  for(var j=1; j<=i; j++){
+     output += star+space;
+  }  
+  
+  
+  console.log(output);
+  output = "";
+}
